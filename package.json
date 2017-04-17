@@ -1,7 +1,7 @@
 {
   "name": "run-python-simply",
   "main": "./lib/run-python-simply",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Run a python file in a terminal",
   "keywords": [
     "python"
