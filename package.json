@@ -1,0 +1,19 @@
+{
+  "name": "run-python-simply",
+  "main": "./lib/run-python-simply",
+  "version": "0.0.1",
+  "description": "Run a python file in a terminal",
+  "keywords": [
+    "python"
+  ],
+  "activationCommands": {
+    "atom-workspace": "run-python-simply:toggle"
+  },
+  "repository": "https://github.com/techstay/run-python-simply",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}
