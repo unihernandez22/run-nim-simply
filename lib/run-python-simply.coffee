@@ -21,14 +21,16 @@ module.exports = RunPythonSimply =
       if file
         fileInfo = path.parse(file.path)
         if fileInfo.ext != ".py"
-          atom.notifications.add("warning", "Current file is not a python source file")
+          atom.notifications.addWarning("Current file is not a python source file")
         else
-          editor.save()
-          @run(file.path)
+          editor.save().then (success) =>
+            @run(file.path)
+          .catch (error) =>
+            atom.notifications.addError("Save file failed: #{error}")
       else
-        atom.notifications.add("info", "No source file to run")
+        atom.notifications.addInfo("No source file to run")
 
-  run: (file)->
+  run: (file) ->
     command = atom.config.get('run-python-simply.command')
     args = command.split(" ").concat(['python', __dirname + path.sep + 'exec.py', file])
     process = child_process.spawn("start", args, {
@@ -41,7 +43,7 @@ module.exports = RunPythonSimply =
     command:
       title: "Command Prompt"
       type: 'string'
-      default: 'cmd /c'
+      default: 'powershell -command'
       enum: [
         {value: 'cmd /c', description: 'Command Line Prompt'}
         {value: 'powershell -command', description: 'Powershell'}

@@ -17,5 +17,5 @@ seconds = end - start
 
 print()
 print(
-    f'Process return {exitcode} ({hex(exitcode)})   execution time: {seconds:.03f} s')
+    'Process return {0} ({1})   execution time: {2:.03f} s'.format(exitcode, hex(exitcode), seconds))
 subprocess.call("pause", shell=True)

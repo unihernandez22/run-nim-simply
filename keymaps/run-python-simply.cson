@@ -1,2 +1,2 @@
 'atom-workspace':
-  'f5': 'run-python-simply:toggle'
+  'F5': 'run-python-simply:toggle'

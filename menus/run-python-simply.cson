@@ -2,7 +2,7 @@
 'context-menu':
   'atom-text-editor': [
     {
-      'label': 'Toggle run-python-simply'
+      'label': 'Run Python Simply'
       'command': 'run-python-simply:toggle'
     }
   ]
@@ -10,7 +10,7 @@
   {
     'label': 'Packages'
     'submenu': [
-      'label': 'run-python-simply'
+      'label': 'Run Python Simply'
       'submenu': [
         {
           'label': 'Toggle'
