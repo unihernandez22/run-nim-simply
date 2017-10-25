@@ -32,4 +32,4 @@ Run a python file in cmd or Powershell.
 Thanks to [atom-python-run](https://github.com/foreshadow/atom-python-run), I learned a lot from it.
 
 
-![screenshot](https://raw.githubusercontent.com/techstay/run-python-simply/master/screenshot.PNG)
+![screenshot](https://raw.githubusercontent.com/techstay/run-python-simply/master/shot.PNG)
