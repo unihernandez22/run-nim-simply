@@ -29,7 +29,7 @@ Run a python file in cmd or Powershell.
     - It is a rough time based on real time rather than CPU kernel time or CPU user time
 
 
-Thanks to [atom-python-run](https://github.com/techstay/run-python-simply), I learned a lot from it.
+Thanks to [atom-python-run](https://github.com/foreshadow/atom-python-run), I learned a lot from it.
 
 
-![A screenshot of your package](https://raw.githubusercontent.com/techstay/run-python-simply/master/screenshot.PNG)
+![screenshot](https://raw.githubusercontent.com/techstay/run-python-simply/master/screenshot.PNG)
