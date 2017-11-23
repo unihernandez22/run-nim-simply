@@ -6,21 +6,23 @@
 
 Run a python file in cmd or Powershell.
 
-# Prerequisite
+![screenshot](https://raw.githubusercontent.com/techstay/run-python-simply/master/shot.PNG)
+
+## Prerequisite
 
 - Windows
 - Python 3 in `PATH`
 
 
-# Method of use
+## Usage
 
 1. Open a `.py` file.
-2. Hit `F5` to run.
+2. Press `F5` to run.
 
 
-- **It will save the file in current editor immediately without a confirmation, be aware.**
+**It will save the file in current editor immediately without a confirmation, be aware.**
 
-# Features
+## Features
 
 - cmd or Powershell
   - Two options for you, cmd and powershell. Choose one you like!
@@ -28,8 +30,15 @@ Run a python file in cmd or Powershell.
   - Show return value and execution time
     - It is a rough time based on real time rather than CPU kernel time or CPU user time
 
+## Config
+The commands use `{file}` as a placeholder for the file to run. I redesign the commands format to support linux systems in the future. Now Windows cmd and powershell are available.
+
+|ternimal|config|
+|----|----|
+|cmd|start cmd /c python {file}|
+|powershell|start powershell -Command python {file}|
+
+
+## Thanks
 
 Thanks to [atom-python-run](https://github.com/foreshadow/atom-python-run), I learned a lot from it.
-
-
-![screenshot](https://raw.githubusercontent.com/techstay/run-python-simply/master/shot.PNG)

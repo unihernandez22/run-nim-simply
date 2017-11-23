@@ -4,11 +4,12 @@ import subprocess
 import time
 import sys
 
-script = sys.argv[1]
+cwd = sys.argv[1]
+script = sys.argv[2]
 
 start = time.time()
-process = subprocess.run(['python', script], stderr=subprocess.STDOUT)
-exitcode = process.returncode
+exitcode = subprocess.call(
+    ['python', script], cwd=cwd, stderr=subprocess.STDOUT)
 
 
 end = time.time()
@@ -18,4 +19,8 @@ seconds = end - start
 print()
 print(
     'Process return {0} ({1})   execution time: {2:.03f} s'.format(exitcode, hex(exitcode), seconds))
-subprocess.call("pause", shell=True)
+
+if sys.platform == 'win32':
+    subprocess.call("pause", shell=True)
+else:
+    input("Press Enter to continue...")
