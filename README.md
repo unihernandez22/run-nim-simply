@@ -28,12 +28,12 @@ Run a python file in cmd or Powershell or other Linux terminals.
 - CodeBlocks debug console style
   - Show return value and execution time
     - It is a rough time based on real time rather than CPU kernel time or CPU user time
-- other Linux ternimals(gnome-ternimal etc.)
+- other Linux terminals(gnome-terminal etc.)
 
 ## Config
 The commands use `{file}` as a placeholder for the file to run. I redesign the commands format to support linux systems in the future. Now Windows cmd and powershell are available.
 
-|ternimal|config|
+|terminal|config|
 |----|----|
 |cmd|start cmd /c python {file}|
 |powershell|start powershell -Command python {file}|
