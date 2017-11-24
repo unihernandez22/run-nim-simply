@@ -4,13 +4,12 @@
 [![GitHub forks](https://img.shields.io/github/forks/techstay/run-python-simply.svg?style=plastic)](https://github.com/techstay/run-python-simply/network)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://raw.githubusercontent.com/techstay/run-python-simply/master/LICENSE.md)
 
-Run a python file in cmd or Powershell.
+Run a python file in cmd or Powershell or other Linux terminals.
 
 ![screenshot](https://raw.githubusercontent.com/techstay/run-python-simply/master/shot.PNG)
 
 ## Prerequisite
 
-- Windows
 - Python 3 in `PATH`
 
 
@@ -29,6 +28,7 @@ Run a python file in cmd or Powershell.
 - CodeBlocks debug console style
   - Show return value and execution time
     - It is a rough time based on real time rather than CPU kernel time or CPU user time
+- other Linux ternimals(gnome-ternimal etc.)
 
 ## Config
 The commands use `{file}` as a placeholder for the file to run. I redesign the commands format to support linux systems in the future. Now Windows cmd and powershell are available.
@@ -37,7 +37,7 @@ The commands use `{file}` as a placeholder for the file to run. I redesign the c
 |----|----|
 |cmd|start cmd /c python {file}|
 |powershell|start powershell -Command python {file}|
-
+|gnome-terminal|gnome-terminal -x python3 {file}|
 
 ## Thanks
 
